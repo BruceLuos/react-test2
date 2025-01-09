@@ -62,7 +62,7 @@ export function ProductDetail() {
             </button>
           </div>
         ) : (
-          <ProductContent product={product!} />
+          product && <ProductContent product={product} />
         )}
       </SheetContent>
     </Sheet>
